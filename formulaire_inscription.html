@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulaire d'inscription</title>
+    </head>
+    <body>
+        <form method="post">
+            <label>Nom: <input type="text" name="pseudo" placeholder="Nom" required/></label><br/>
+            <label>Prenom: <input type="text" name="pseudo" placeholder="Prenom" required/></label><br/>
+            <label>Date de Naissance: <input type="date" name="anniversaire" placeholder="Date de naissance" required></label><br/>
+            <label>Situation: </label>
+            <select name="le_nom" id="le_nom" required>
+                <option value="Célibataire">Célibataire</option>
+                <option value="En couple">En couple</option>
+                <option value="Divorce">Divorcé(e)</option>
+                <option value="Veuf/Veuve">Veuf/Veuve</option>
+            </select><br/>
+            <label>Mot de passe: <input type="password" name="passe" placeholder="Mot de Passe" required/></label><br/>
+            <label>Confirmation du mot de passe: <input type="password" name="passe2" placeholder="Mot de Passe" required/></label><br/>
+            <label>Adresse e-mail: <input type="text" name="email" placeholder="E-mail" required/></label><br/>
+            <label>Telephone: <input type="tel" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$"  placeholder="Telephone" required></label><br/>
+            <input type="submit" value="M'inscrire"/>
+        </form>
+
+    </body>
+</html>
