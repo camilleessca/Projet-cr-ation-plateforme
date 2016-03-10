@@ -1,0 +1,55 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Formulaire d'inscription
+  body
+    form(action='users/Inscription' method='post')
+      label
+        | Nom:
+        input(type='text', name='nom', placeholder='Nom', required='')
+      br
+      label
+        | Prénom:
+        input(type='text', name='prenom', placeholder='Prénom', required='')
+      br
+      label
+        | Date de Naissance:
+        input(type='date', name='anniversaire', placeholder='Date de naissance', required='')
+      br
+      label Situation:
+      select(name='situation', required='')
+        option(value='Célibataire') Célibataire
+        option(value='En couple') En couple
+        option(value='Divorce') Divorcé(e)
+        option(value='Veuf/Veuve') Veuf/Veuve
+      br
+      label
+        | Mot de passe:
+        input(type='password', name='pwd', placeholder='Mot de passe', required='')
+      br
+      label
+        | Confirmation du mot de passe:
+        input(type='password', name='pwdconf', placeholder='Mot de passe', required='')
+      br
+      label
+        | Adresse e-mail:
+        input(type='text', name='email', placeholder='E-mail', required='')
+      br
+      label
+        | Adresse postale:
+        input(type='text', name='adresse', placeholder='Adresse postale', required='')
+      br
+      label
+        | Ville:
+        input(type='text', name='ville', placeholder='Ville', required='')
+      br
+      label
+        | Code postale:
+        input(type='text', name='codePostal', placeholder='ex:75018', required='')
+      br
+      label
+        | Téléphone:
+        input(type='tel', name='telephone', pattern='^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$', placeholder='Téléphone', required='')
+      br
+      input(type='submit', value="M'inscrire")

@@ -1,0 +1,36 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Formulaire d'inscription
+  body
+    form(action='entreprises/Inscription_Entreprise', method='post')
+      label
+        | Nom Entreprise:
+        input(type='text', name='nom', placeholder='Nom', required='')
+      br
+      label
+        | N° de Siret:
+        input(type='texte', name='siret', placeholder='Siret', required='')
+        br
+        label
+          | Nom du RH:
+          input(type='text', name='pwd', placeholder='Nom du RH', required='')
+          br
+          label
+            | Mot de passe:
+            input(type='password', name='passe', placeholder='Mot de passe', required='')
+          br
+          label
+            | Confirmation du mot de passe:
+            input(type='password', name='passe2', placeholder='Mot de passe', required='')
+          br
+          label
+            | Adresse e-mail:
+            input(type='text', name='email', placeholder='E-mail', required='')
+          br
+          label
+            | Téléphone:
+            input(type='tel', name='telephone', pattern='^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$', placeholder='Téléphone', required='')
+          br
+          input(type='submit', value="M'inscrire")
