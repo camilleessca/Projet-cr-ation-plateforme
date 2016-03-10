@@ -1,0 +1,714 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Actyvea</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.css">  
+	<link rel="stylesheet" href="css/flexslider.css">  
+	<link rel="stylesheet" href="css/style.css">  
+	<link rel="stylesheet" href="css/design.css">  
+
+
+
+</head> <!-- head -->
+<body class="sticky-header">
+	<div class="body-innerwrapper">
+		
+		<!--==================================
+		=            START Header            =
+		===================================-->
+		<header>
+			<!-- top-bar -->
+			<div id="newedge-top-bar">
+				<div class="container">
+					<div class="row">
+						<div id="logo" class="col-xs-4 col-sm-3 col-md-3 hidden-sm hidden-xs">
+							<a href="#">Actyvea</a>
+						</div> <!-- //logo -->
+						
+	
+								<div class="newedge-login">
+									<a href="#" role="button" data-toggle="modal" data-target="#login">
+										<i class="fa fa-user"> Se connecter</i>
+									</a>
+									<!-- Login modal -->
+									<div id="login" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+										<div class="modal-dialog">
+											<!-- Modal content-->
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-close"></i></button>
+													<h1 class="text-left">Se connecter</h1>
+												</div>
+												<div class="modal-body">
+													<form action="#" method="post" id="login-form">
+														<fieldset class="userdata">
+															<input id="username" placeholder="Identifiant" type="text" name="username" class="form-control">
+															<input id="password" type="password" placeholder="Mot de passe" name="password" class="form-control">
+															<div class="remember-wrap">
+																<input id="remember" type="checkbox" name="remember" class="inputbox" value="yes">
+																<label for="remember">Se souvenir de mon identifiant</label>
+															</div>
+															<div class="button-wrap pull-left">
+																<input type="submit" name="Submit" class="btn btn-block btn-success" value="Se connecter">
+															</div>
+															<p class="forget-name-link pull-left">
+																Oublie de <a href="#">
+																l'Identifiant</a> ou du <a href="#">
+																Mot de passe ?</a>
+															</p>
+														</fieldset>
+													</form>
+												</div> <!--/Modal body-->
+												<div class="modal-footer">
+													Nouveau ?  <a href="#">
+													Créer un compte içi</a>
+												</div> <!--/Modal footer-->
+											</div> <!-- Modal content-->
+
+										</div> <!-- /.modal-dialog -->
+									</div> <!-- //Login modal -->
+								</div> <!-- //login -->
+								<div class="newedge-login">
+									<a href="#" role="button" data-toggle="modal" data-target="#login">
+										<i class="fa fa-user"> S'inscrire</i>
+									</a>
+									<!-- Login modal -->
+									<div id="login" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+										<div class="modal-dialog">
+											<!-- Modal content-->
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-close"></i></button>
+													<h1 class="text-left">S'inscrire</h1>
+												</div>
+												<div class="modal-body">
+													<form action="#" method="post" id="login-form">
+														<fieldset class="userdata">
+															<input id="username" placeholder="Identifiant" type="text" name="username" class="form-control">
+															<input id="password" type="password" placeholder="Mot de passe" name="password" class="form-control">
+															<div class="remember-wrap">
+																<input id="remember" type="checkbox" name="remember" class="inputbox" value="yes">
+																<label for="remember">Se souvenir de mon identifiant</label>
+															</div>
+															<div class="button-wrap pull-left">
+																<input type="submit" name="Submit" class="btn btn-block btn-success" value="Se connecter">
+															</div>
+															<p class="forget-name-link pull-left">
+																Oublie de <a href="#">
+																l'Identifiant</a> ou du <a href="#">
+																Mot de passe ?</a>
+															</p>
+														</fieldset>
+													</form>
+												</div> <!--/Modal body-->
+												<div class="modal-footer">
+													Nouveau ?  <a href="#">
+													Créer un compte içi</a>
+												</div> <!--/Modal footer-->
+											</div> <!-- Modal content-->
+											
+										</div> <!-- /.modal-dialog -->
+									</div> <!-- //Login modal -->
+								</div> <!-- //login -->
+						</div> 
+					</div> <!-- //row -->
+				</div> <!-- //container -->
+			</div> <!-- //top-bar -->
+	
+			<!-- navigation mobile version -->
+			<div id="mobile-nav-bar" class="mobile-nav-bar">
+				<div class="container">
+					<div class="row">
+						<div class="visible-sm visible-xs col-sm-12">
+							<div id="logo" class="mobile-logo pull-left">
+								<a href="index.html">Actyvea</a>
+							</div>
+							<a id="offcanvas-toggler" class="pull-right" href="#"><i class="fa fa-bars"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<!-- navigation -->
+			<nav id="navigation-bar" class="navigation hidden-sm hidden-xs">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<ul class="list-inline megamenu-parent">
+								<li>
+									<a href="index.html">Acceuil</a>
+								</li>
+								<li class="has-child menu-justify">
+									<a href="article-categories.html">Dernières offres d'emplois</a>
+									<div class="dropdown-inner container dropdown-menu-full-wrapper">
+										<div class="dropdown-menu-full vertical-tabs">
+											<div class="row">
+												<div class="col-sm-12">
+													<div class="row">
+														<div class="col-sm-3">
+															<ul class="tab-btns" role="tablist">
+																<li class="active"><a href="#facebook" data-toggle="tab">Offres d'emploi par Fonction</a></li>
+																<li><a href="#twitter" data-toggle="tab">Offres d'emploi par Ville</a></li>
+																<li><a href="#youtube" data-toggle="tab">Offres d'emploi par salaire</a></li>
+																<li><a href="#pinterest" data-toggle="tab">? </a></li>
+																<li><a href="#dribble" data-toggle="tab">?</a></li>
+																<li><a href="#g-plus" data-toggle="tab">Offres de stages</a></li>
+															</ul>
+														</div> <!-- //col-sm-3 -->
+	
+														<div class="col-sm-9">
+															<div class="tab-content simple-article-overlay">
+																<div role="tabpanel" class="tab-pane active" id="facebook">
+																	<div class="row">
+																		<div class="col-sm-4">
+																			<article class="item">
+																				<div class="article-inner">
+																					<div class="overlay"></div>
+																					<div class="img-wrapper"><img class="img-100p latest-post-image" src="#"></div>
+																				
+																					<div class="article-info">
+																						<h4 class="entry-title">
+																							<a href="single-article.html">1.1</a>
+																						</h4>
+																					</div>
+																				</div>
+																			</article>
+																		</div>
+																		<div class="col-sm-4">
+																			<article class="item">
+																				<div class="article-inner">
+																					<div class="overlay"></div>
+																					<div class="img-wrapper"><img class="img-100p latest-post-image" src="#"></div>
+																					<div class="article-info">
+																						<h4 class="entry-title">
+																							<a href="single-article.html">1.2</a>
+																						</h4>
+																					</div>
+																				</div>
+																			</article>
+																		</div>
+																		<div class="col-sm-4">
+																			<article class="item">
+																				<div class="article-inner">
+																					<div class="overlay"></div>
+																					<div class="img-wrapper"><img class="img-100p latest-post-image" src="#"></div>
+																					<div class="article-info">
+																						<h4 class="entry-title">
+																							<a href="single-article.html">1.3</a>
+																						</h4>
+																					</div>
+																				</div>
+																			</article>
+																		</div>
+																	</div> <!-- //row -->
+																</div> <!-- //tab-pane -->
+																<div role="tabpanel" class="tab-pane" id="twitter">
+																	<div class="row">
+																		<div class="col-sm-4">
+																			<article class="item">
+																				<div class="article-inner">
+																					<div class="overlay"></div>
+																					<div class="img-wrapper"><img class="img-100p latest-post-image" src="#"></div>
+																					<div class="article-info">
+																						<h4 class="entry-title">
+																							<a href="single-article.html">2.1</a>
+																						</h4>
+																					</div>
+																				</div>
+																			</article>
+																		</div>
+																		<div class="col-sm-4">
+																			<article class="item">
+																				<div class="article-inner">
+																					<div class="overlay"></div>
+																					<div class="img-wrapper"><img class="img-100p latest-post-image" src="#"></div>
+																					<div class="article-info">
+																						<h4 class="entry-title">
+																							<a href="single-article.html">2.2</a>
+																						</h4>
+																					</div>
+																				</div>
+																			</article>
+																		</div>
+																		<div class="col-sm-4">
+																			<article class="item">
+																				<div class="article-inner">
+																					<div class="overlay"></div>
+																					<div class="img-wrapper"><img class="img-100p latest-post-image" src="#"></div>
+																					<div class="article-info">
+																						<h4 class="entry-title">
+																							<a href="single-article.html">2.3</a>
+																						</h4>
+																					</div>
+																				</div>
+																			</article>
+																		</div>
+																	</div> <!-- //row -->
+																</div> <!-- //tab-pane -->
+																<div role="tabpanel" class="tab-pane" id="youtube">
+																	<div class="row">
+																		<div class="col-sm-4">
+																			<article class="item">
+																				<div class="article-inner">
+																					<div class="overlay"></div>
+																					<div class="img-wrapper"><img class="img-100p latest-post-image" src="#"></div>
+																					<div class="article-info">
+																						<h4 class="entry-title">
+																							<a href="single-article.html">3.1</a>
+																						</h4>
+																					</div>
+																				</div>
+																			</article>
+																		</div>
+																		<div class="col-sm-4">
+																			<article class="item">
+																				<div class="article-inner">
+																					<div class="overlay"></div>
+																					<div class="img-wrapper"><img class="img-100p latest-post-image" src="#"></div>
+																					<div class="article-info">
+																						<h4 class="entry-title">
+																							<a href="single-article.html">1.2</a>
+																						</h4>
+																					</div>
+																				</div>
+																			</article>
+																		</div>
+																		<div class="col-sm-4">
+																			<article class="item">
+																				<div class="article-inner">
+																					<div class="overlay"></div>
+																					<div class="img-wrapper"><img class="img-100p latest-post-image" src="#"></div>
+																					<div class="article-info">
+																						<h4 class="entry-title">
+																							<a href="single-article.html">1.2</a>
+																						</h4>
+																					</div>
+																				</div>
+																			</article>
+																		</div>
+																	</div> <!-- //row -->
+																</div> <!-- //tab-pane -->
+																<div role="tabpanel" class="tab-pane" id="pinterest">
+																	<div class="row">
+																		<div class="col-sm-4">
+																			<article class="item">
+																				<div class="article-inner">
+																					<div class="overlay"></div>
+																					<div class="img-wrapper"><img class="img-100p latest-post-image" src="#"></div>
+																					<div class="article-info">
+																						<h4 class="entry-title">
+																							<a href="single-article.html">1.2</a>
+																						</h4>
+																					</div>
+																				</div>
+																			</article>
+																		</div>
+																		<div class="col-sm-4">
+																			<article class="item">
+																				<div class="article-inner">
+																					<div class="overlay"></div>
+																					<div class="img-wrapper"><img class="img-100p latest-post-image" src="#"></div>
+																					<div class="article-info">
+																						<h4 class="entry-title">
+																							<a href="single-article.html">1.2</a>
+																						</h4>
+																					</div>
+																				</div>
+																			</article>
+																		</div>
+																		<div class="col-sm-4">
+																			<article class="item">
+																				<div class="article-inner">
+																					<div class="overlay"></div>
+																					<div class="img-wrapper"><img class="img-100p latest-post-image" src="#"></div>
+																					<div class="article-info">
+																						<h4 class="entry-title">
+																							<a href="single-article.html">1.2</a>
+																						</h4>
+																					</div>
+																				</div>
+																			</article>
+																		</div>
+																	</div> <!-- //row -->
+																</div> <!-- //tab-pane -->
+																<div role="tabpanel" class="tab-pane" id="dribble">
+																	<div class="row">
+																		<div class="col-sm-4">
+																			<article class="item">
+																				<div class="article-inner">
+																					<div class="overlay"></div>
+																					<div class="img-wrapper"><img class="img-100p latest-post-image" src="#"></div>
+																					<div class="article-info">
+																						<h4 class="entry-title">
+																							<a href="single-article.html">1.2</a>
+																						</h4>
+																					</div>
+																				</div>
+																			</article>
+																		</div>
+																		<div class="col-sm-4">
+																			<article class="item">
+																				<div class="article-inner">
+																					<div class="overlay"></div>
+																					<div class="img-wrapper"><img class="img-100p latest-post-image" src="#"></div>
+																					<div class="article-info">
+																						<h4 class="entry-title">
+																							<a href="single-article.html">1.2</a>
+																						</h4>
+																					</div>
+																				</div>
+																			</article>
+																		</div>
+																		<div class="col-sm-4">
+																			<article class="item">
+																				<div class="article-inner">
+																					<div class="overlay"></div>
+																					<div class="img-wrapper"><img class="img-100p latest-post-image" src="#"></div>
+																					<div class="article-info">
+																						<h4 class="entry-title">
+																							<a href="single-article.html">1.2</a>
+																						</h4>
+																					</div>
+																				</div>
+																			</article>
+																		</div>
+																	</div> <!-- //row -->
+																</div> <!-- //tab-pane -->
+																<div role="tabpanel" class="tab-pane" id="g-plus">
+																	<div class="row">
+																		<div class="col-sm-4">
+																			<article class="item">
+																				<div class="article-inner">
+																					<div class="overlay"></div>
+																					<div class="img-wrapper"><img class="img-100p latest-post-image" src="#"></div>
+																					<div class="article-info">
+																						<h4 class="entry-title">
+																							<a href="single-article.html">1.2</a>
+																						</h4>
+																					</div>
+																				</div>
+																			</article>
+																		</div>
+																		<div class="col-sm-4">
+																			<article class="item">
+																				<div class="article-inner">
+																					<div class="overlay"></div>
+																					<div class="img-wrapper"><img class="img-100p latest-post-image" src="#"></div>
+																					<div class="article-info">
+																						<h4 class="entry-title">
+																							<a href="single-article.html">1.2</a>
+																						</h4>
+																					</div>
+																				</div>
+																			</article>
+																		</div>
+																		<div class="col-sm-4">
+																			<article class="item">
+																				<div class="article-inner">
+																					<div class="overlay"></div>
+																					<div class="img-wrapper"><img class="img-100p latest-post-image" src="#"></div>
+																					<div class="article-info">
+																						<h4 class="entry-title">
+																							<a href="single-article.html">1.2</a>
+																						</h4>
+																					</div>
+																				</div>
+																			</article>
+																		</div>
+																	</div> <!-- //row -->
+																</div> <!-- //tab-pane -->
+															</div> <!-- //tab-content -->
+														</div> <!-- //col-sm-9 -->
+													</div> <!-- //row -->								
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li><a href="article-categories.html">Tech</a></li>
+								<li class="has-child">
+									<a href="javascript:void(0)">Pages</a>
+									<div class="dropdown-inner">
+										<ul class="dropdown-items">
+											<li><a href="about.html">About Us</a></li>
+											<li><a href="advertisement.html">Advertisement</a></li>
+											<li><a href="contact.html">Contact Us</a></li>
+											<li><a href="comingsoon.html">Coming Soon</a></li>
+											<li><a href="404.html">404 Page</a></li>
+											<li class="has-child">
+												<a href="javascript:void(0)">Parent</a>
+												<div class="dropdown-inner sub-dropdown-inner">
+													<ul class="dropdown-items">
+														<li><a href="javascript:void(0)">Sub Child 01</a></li>
+														<li><a href="javascript:void(0)">Sub Child 02</a></li>
+														<li><a href="javascript:void(0)">Sub Child 03</a></li>
+														<li class="has-child">
+															<a href="javascript:void(0)">Parent</a>
+															<div class="dropdown-inner sub-dropdown-inner">
+																<ul class="dropdown-items">
+																	<li><a href="javascript:void(0)">Sub Child 01</a></li>
+																	<li><a href="javascript:void(0)">Sub Child 02</a></li>
+																	<li><a href="javascript:void(0)">Sub Child 03</a></li>
+																</ul>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li><a href="article-categories.html">Entertainment</a></li>
+								<li><a href="article-categories.html">Business</a></li>
+								<li><a href="article-categories.html">Fashion</a></li>
+								<li><a href="article-categories.html">Video</a></li>
+								<li><a href="article-categories.html">Leadership</a></li>
+								<li><a href="article-categories.html">Explore</a></li>
+							</ul>
+						</div> <!-- col-sm-12 -->
+					</div> <!-- //row -->
+				</div> <!-- //container -->
+			</nav> <!-- //navigation -->
+		</header>
+		<!--====  End of Header  ====-->
+		
+	
+		<!--==================================
+		=            START SLIDER            =
+		===================================-->
+		<section class="newedge-slider img-overlay">
+			<div class="newedge-slider-content">
+				<div id="main-slider" class="carousel slide" data-ride="carousel">
+					<div class="container visible-lg visible-md">
+						<div class="main-slider-indicators ">
+						 	<div class="nano">
+						 		<div class="content">
+						 			<ul class="main-slider-indicators-inner carousel-indicators" tabindex="0">
+						 				<li data-target="#main-slider" data-slide-to="0" class="text-right active">
+						 					<p class="slide2-type"> <span class="cat-icon cat-icon-color01"> L</span>Leadership</p>
+						 					<p class="indicators-title"> Vestibulum eget felis nec purus commodo convallis </p>
+						 				</li>
+						 				<li data-target="#main-slider" data-slide-to="1" class="text-right">
+						 					<p class="slide2-type"> <span class="cat-icon cat-icon-color02"> v</span>video</p>
+						 					<p class="indicators-title"> Somp Bieber Deal Is Not Just Another Gimmick </p>
+						 				</li>
+						 				<li data-target="#main-slider" data-slide-to="2" class="text-right">
+						 					<p class="slide2-type"> <span class="cat-icon cat-icon-color03"> T</span>Technology</p>
+						 					<p class="indicators-title"> Wrence Tops World Best Dressed Women List 2015 </p>
+						 				</li>
+						 			</ul>
+						 		</div>
+						 	</div>
+						 </div> <!-- //carousel-indicators -->
+					</div> <!-- //container -->
+	
+					<div class="carousel-inner" role="listbox">
+						<div class="item active" style="background-image: url(img/slider/01.jpg);">
+							<div class="item-overlay"> </div>
+							<div class="container">
+								<div class="row">
+									<div class="col-md-6 col-sm-12 next-post">
+										<div class="next-post-wrapper">
+											<div>
+												<p class="slide-cat">
+													<a href="article-categories.html"><span class="cat-icon cat-icon-color01"> L</span>Leadership</a>
+												</p>
+												<h2 class="slide-title">
+													<a href="single-article.html">Vestibulum eget felis nec purus commodo convallis</a>
+												</h2>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item" style="background-image: url(img/slider/02.jpg);">
+							<div class="item-overlay"> </div>
+							<div class="container">
+								<div class="row">
+									<div class="col-md-6 col-sm-12 next-post">
+										<div class="next-post-wrapper">
+											<div>
+												<p class="slide-cat">
+													<a href="article-categories.html"><span class="cat-icon cat-icon-color02"> v</span>video</a>
+												</p>
+												<h2 class="slide-title">
+													<a href="single-article.html">Somp Bieber Deal Is Not Just Another Gimmick</a>
+												</h2>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item" style="background-image: url(img/slider/03.jpg);">
+							<div class="item-overlay"> </div>
+							<div class="container">
+								<div class="row">
+									<div class="col-md-6 col-sm-12 next-post">
+										<div class="next-post-wrapper">
+											<div>
+												<p class="slide-cat">
+													<a href="article-categories.html">
+														<span class="cat-icon cat-icon-color03"> T</span>Technology
+													</a>
+												</p>
+												<h2 class="slide-title">
+													<a href="single-article.html">Wrence Tops World Best Dressed Women List 2015</a>
+												</h2>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item" style="background-image: url(img/slider/04.jpg);">
+							<div class="item-overlay"> </div>
+							<div class="container">
+								<div class="row">
+									<div class="col-md-6 col-sm-12 next-post">
+										<div class="next-post-wrapper">
+											<div>
+												<p class="slide-cat">
+													<a href="#">
+														<span class="cat-icon"> B</span>Business
+													</a>
+												</p>
+												<h2 class="slide-title">
+													<a href="#">Kevin cow drumstick, turkey sirloin</a>
+												</h2>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> <!-- //carousel-inner -->
+
+					<!-- Navigation for mobile device -->
+					<div class="container visible-sm visible-xs">
+						<div class="customNavigation carousel-controls">
+							<a class="left" data-target="#main-slider" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+							<a class="right" data-target="#main-slider" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div> <!-- //newedge-slider-content -->
+		</section>
+		<!--====  End of SLIDER  ====-->
+	
+		
+	
+		<!--==================================
+		=            START MAIN WRAPPER      =
+		===================================-->
+		
+	
+	
+	
+		<!--==================================
+		=            START FOOTER            =
+		===================================-->
+		<footer>
+			<div class="footer-wrapper">
+				<div class="container">
+					<div class="row">
+						<div id="bottom1" class="col-sm-6 col-md-3">
+							<p class="footer-logo">Actyvea</p>
+							<p class="footer-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et aliqua.</p>
+							<div class="footer-contact">
+								<p>
+									<span>Email:</span>
+									info@yourcompnay.com
+								</p>
+								<p>
+									<span>Fax:</span>
+									+0123 4567 8910
+								</p>
+							</div>
+						</div> <!-- //bottom1 -->
+	
+						<div id="bottom2" class="col-sm-6 col-md-3">
+							<div class="bottom-menu">
+								<div class="pull-left">
+									<ul class="menu">
+										<li><a href="index.html">Acceuil </a></li>
+										<li><a href="about.html">Nous contacter</a></li>
+										<li><a href="article-categories.html">Catégorie d'emplois</a></li>
+										<li><a href="#">Forums</a></li>
+									</ul>
+								</div>
+								<div class="pull-right">
+									<ul class="menu">
+										<li><a href="contact.html">Contact</a></li>
+										<li><a href="#">Privacy Policy</a></li>
+										<li><a href="#">Terms of Use</a></li>
+										<li><a href="comingsoon.html">Coming Soon</a></li>
+										<li><a href="404.html">404 Page</a></li>
+									</ul>
+								</div>
+							</div>
+						</div> <!-- //bottom2 -->
+	
+					
+	
+						<div id="bottom4" class="col-sm-6 col-md-3">
+							<div class="social-wrapper">
+								<h3 class="title">Réseau social</h3>
+								<ul class="social-icons">
+									<li><a target="_blank" href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+									<li><a target="_blank" href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+									<li><a target="_blank" href="#"><i class="fa fa-google-plus"></i> Google Plus</a></li>
+									<li><a target="_blank" href="#"><i class="fa fa-pinterest"></i> Pinterest</a></li>
+									<li><a target="_blank" href="#"><i class="fa fa-linkedin"></i> Linkedin</a></li>
+								</ul>
+							</div>
+						</div> <!-- //bottom4 -->
+					</div> <!-- //row -->
+				</div>  <!-- //container -->
+			</div> <!-- //footer-wrapper --> 
+	
+			<div class="copyright-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 col-md-6">
+							<p class="copyright"> Copyright © 2015. All rights reserved.</p>
+						</div>
+
+					</div>  <!-- //row -->
+				</div> <!-- //container -->
+			</div> <!-- //copyright-wrapper -->
+		</footer>
+		<!--====  End of FOOTER  ====-->
+		
+
+	</div> <!-- //body-innerwrapper -->
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<!-- select menu -->
+	<script src="js/classie.js"></script>
+	<script src="js/selectFx.js"></script>
+	<!-- slider -->
+	<script src="js/jquery.nanoscroller.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- sitcky menu -->
+	<script src="js/jquery.sticky.js"></script>
+	<!-- custom js -->
+	<script src="js/main.js"></script>
+	<script src="js/switcher.js"></script>
+</body>
+</html>
