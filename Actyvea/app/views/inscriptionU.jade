@@ -1,0 +1,191 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Inscription
+    link(rel='stylesheet', href='../stylesheets/inscriptionU.css')
+    link(rel='stylesheet', href='../stylesheets/style.css')
+    // Latest compiled and minified CSS
+    link(rel='stylesheet', href='../stylesheets/bootstrap.min.css')
+    // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+    link(rel='stylesheet', href='../css/demo.css')
+    link(rel='stylesheet', href='css/footer-distributed-with-address-and-phones.css')
+    link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css')
+    link(href='http://fonts.googleapis.com/css?family=Cookie', rel='stylesheet', type='text/css')
+  body
+    // NAVBAR
+    div
+      nav.navbar.navbar-custom.navbar-fixed-top
+        .container-fluid
+          // Brand and toggle get grouped for better mobile display
+          .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#item_nav', aria-expanded='false')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+          // Collect the nav links, forms, and other content for toggling
+          #item_nav.collapse.navbar-collapse
+            ul.nav.navbar-nav
+              li
+                a(href='/') Accueil
+              li
+                a(href='#')
+                  | Inscription
+                  span.sr-only (current)
+              li
+                a(href='/users/information') A propos
+              li
+                a(href='/users/partenaire') Partenaires
+              li#connexionright
+                a(href='/users/connexion') Connexion
+          // /.navbar-collapse
+        // /.container-fluid
+    // Fin de la navbar
+    // Body
+    #colordiv
+      .container
+        .row
+          .col-lg-12
+            .tableaudebord
+              .contact_container
+                .row
+                  .col-lg-12.col-md-12
+                    h2 Inscription
+                    p Lorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor amet
+                    .nb_com(style='display:none') 9
+              .container
+                .row
+                  form.form-horizontal(action='users/Inscription', method='post', role='form')
+                    .row
+                      .col-lg-12
+                        .titleprghp
+                          span.prg Information contact
+                    .row
+                      .col-lg-6
+                        // <form class="form-horizontal" role="form">
+                        .form-group
+                          label.col-sm-2.control-label Civilité
+                          .col-sm-8
+                            select(name='civilite', required='')
+                              option(value='Madame') Mme
+                              option(value='Monsieur') Mr
+                        .form-group
+                          label.col-sm-2.control-label(for='nom') Nom :
+                          .col-sm-8
+                            input#name.form-control(type='text', name='name', required='')
+                        .form-group
+                          label.col-sm-2.control-label(for='prenom') Prenom :
+                          .col-sm-8
+                            input#prenom.form-control(type='text', name='prenom', required='')
+                        .form-group
+                          label.col-sm-2.control-label Situation
+                          .col-sm-8
+                            select(name='situation', required='')
+                              option(value='Célibataire') Célibataire
+                              option(value='En couple') En couple
+                              option(value='Divorce') Divorcé(e)
+                              option(value='Veuf/Veuve') Veuf/Veuve
+                        .form-group
+                          label.col-sm-2.control-label(for='mobile') Date de naissance :
+                          .col-sm-8
+                            input#anniversaire.form-control(type='date', name='anniversaire', required='')
+                        .form-group
+                          label.col-sm-2.control-label(for='mail') Email :
+                          .col-sm-8
+                            input#email.form-control(type='email', name='email', required='')
+                        // </form>
+                      .col-lg-6
+                        // <form class="form-horizontal" role="form">
+                        .form-group
+                          label.col-sm-2.control-label(for='adresse') Adresse
+                          .col-sm-8
+                            input#adresse.form-control(type='text', name='adresse', required='')
+                        .form-group
+                          label.col-sm-2.control-label(for='cp') Code Postal
+                          .col-sm-8
+                            input#cp.form-control(type='text', name='cp', required='')
+                        .form-group
+                          label.col-sm-2.control-label(for='ville') Ville
+                          .col-sm-8
+                            input#ville.form-control(type='text', name='ville', required='')
+                        .form-group
+                          label.col-sm-2.control-label(for='tel') Téléphone :
+                          .col-sm-8
+                            input#tel.form-control(type='text', name='tel', pattern='^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$', required='')
+                        .form-group
+                          label.col-sm-2.control-label(for='mobile') Mobile :
+                          .col-sm-8
+                            input#mobile.form-control(type='text', name='mobile', pattern='^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$', required='')
+                        // </form>
+                    //
+                      <div class="checkbox">
+                      <label>
+                      <input type="checkbox"> Check me out
+                      </label>
+                      </div>
+              .row
+                .col-lg-12
+                  .boutton
+                    .col-lg-7.col-md-7.hidden-md.hidden-xs
+                    .col-lg-1.col-md-1.col-xs-12
+                      button#cancel.btn.btn-default(name='submit', type='reset', value='reset')
+                        | Cancel
+                        span
+                    .col-lg-3.col-lg-offset-1.col-md-3.col-md-offset-1.col-xs-12
+                      button#submit.btn.btn-default(name='submit', type='submit', value='submit')
+                        span
+                        | Enregistrer la fiche contact
+                        span
+    // FOOTER
+    // The content of your page would go here.
+    footer.footer-distributed.fixed-bot
+      .footer-left
+        h3
+          | Step by
+          span Step
+        p.footer-links
+          a(href='/') Accueil
+            |             ·
+            a(href='#') Inscription
+            |             ·
+            a(href='/users/partenaire') Partenaires
+            |             ·
+            a(href='/users/information') A propos
+            |             ·
+            a(href='/users/contact') Contact
+        p.footer-company-name Step by Step © 2016
+      .footer-center
+        div
+          i.fa.fa-map-marker
+          p
+            span 75020 Ecole Ynov
+            |  Paris, France
+        div
+          i.fa.fa-phone
+          p +33 6 89 89 89 89
+        div
+          i.fa.fa-envelope
+          p
+            a(href='mailto:support@company.com') projet-prison@gmail.com
+      .footer-right
+        p.footer-company-about
+          span A Propos de nous
+          |             Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+        .footer-icons
+          a(href='#')
+            i.fa.fa-facebook
+          a(href='#')
+            i.fa.fa-twitter
+          a(href='#')
+            i.fa.fa-linkedin
+          a(href='#')
+            i.fa.fa-github
+    // jQuery (necessary for Bootstrap's JavaScript plugins)
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+    // Latest compiled and minified JavaScript
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js', integrity='sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==', crossorigin='anonymous')
