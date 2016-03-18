@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var session = require('express-session');
+var nodemailer = require('nodemailer');
 
 mongoose.connect('mongodb://localhost/actyvea', function(err) {
   if (err) { throw err; }
@@ -28,14 +29,14 @@ console.log("Server Actyvea at http://127.0.0.1:3000/");
 app.set('views', path.join(__dirname, 'app/views'));
 app.set('view engine', 'jade');
 app.locals.basedir = path.join(__dirname, 'public');
+app.use(express.static(path.join(__dirname, 'public')));
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({
   secret: "any",
   saveUnitialized: true,
@@ -81,6 +82,5 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
-
 
 module.exports = app;

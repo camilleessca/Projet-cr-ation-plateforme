@@ -2,8 +2,7 @@ doctype html
 html(lang='en')
   head
     meta(charset='UTF-8')
-    title Inscription
-    link(rel='stylesheet', href='../stylesheets/inscriptionU.css')
+    title accueil
     link(rel='stylesheet', href='../stylesheets/style.css')
     // Latest compiled and minified CSS
     link(rel='stylesheet', href='../stylesheets/bootstrap.min.css')
@@ -12,7 +11,7 @@ html(lang='en')
     //if lt IE 9
       script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
       script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
-    link(rel='stylesheet', href='../css/demo.css')
+    link(rel='stylesheet', href='css/demo.css')
     link(rel='stylesheet', href='css/footer-distributed-with-address-and-phones.css')
     link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css')
     link(href='http://fonts.googleapis.com/css?family=Cookie', rel='stylesheet', type='text/css')
@@ -47,6 +46,8 @@ html(lang='en')
         // /.container-fluid
     // Fin de la navbar
     // Body
+    div
+      img#logoaccueil(src='../images/logo.jpg', alt='logo')
     #colordiv
       .container
         .row
@@ -60,24 +61,22 @@ html(lang='en')
                     .nb_com(style='display:none') 9
               .container
                 .row
-                  form.form-horizontal(action='users/Inscription', method='post', role='form')
+                  form.form-horizontal(role='form')
                     .row
-                      .col-lg-12
+                      .col-lg-11
                         .titleprghp
                           span.prg Information contact
                     .row
                       .col-lg-6
                         // <form class="form-horizontal" role="form">
                         .form-group
-                          label.col-sm-2.control-label Civilité
+                          label.col-sm-2.control-label(for='civilite') Civilité :
                           .col-sm-8
-                            select(name='civilite', required='')
-                              option(value='Madame') Mme
-                              option(value='Monsieur') Mr
+                            input#civilite.form-control(type='text', name='civilite;', required='')
                         .form-group
                           label.col-sm-2.control-label(for='nom') Nom :
                           .col-sm-8
-                            input#name.form-control(type='text', name='name', required='')
+                            input#nom.form-control(type='text', name='name', required='')
                         .form-group
                           label.col-sm-2.control-label(for='prenom') Prenom :
                           .col-sm-8
@@ -95,7 +94,7 @@ html(lang='en')
                           .col-sm-8
                             input#anniversaire.form-control(type='date', name='anniversaire', required='')
                         .form-group
-                          label.col-sm-2.control-label(for='mail') Email :
+                          label.col-sm-2.control-label(for='email') Email :
                           .col-sm-8
                             input#email.form-control(type='email', name='email', required='')
                         // </form>
@@ -150,15 +149,15 @@ html(lang='en')
           span Step
         p.footer-links
           a(href='/') Accueil
-            |             ·
-            a(href='#') Inscription
-            |             ·
-            a(href='/users/partenaire') Partenaires
-            |             ·
-            a(href='/users/information') A propos
-            |             ·
-            a(href='/users/contact') Contact
-        p.footer-company-name Step by Step © 2016
+          |                     ·
+          a(href='/users/') Inscription
+          |                     ·
+          a(href='/users/partenaire') Partenaires
+          |                     ·
+          a(href='/users/information') A propos
+          |                     ·
+          a(href='/users/contact') Contact
+        p.footer-company-name Projet Prison © 2016
       .footer-center
         div
           i.fa.fa-map-marker
@@ -175,9 +174,9 @@ html(lang='en')
       .footer-right
         p.footer-company-about
           span A Propos de nous
-          |             Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+          |                     Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
         .footer-icons
-          a(href='#')
+          a(href='https://www.facebook.com/Step-By-Step-582696165230066/?fref=ts')
             i.fa.fa-facebook
           a(href='#')
             i.fa.fa-twitter
@@ -189,3 +188,4 @@ html(lang='en')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
     // Latest compiled and minified JavaScript
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js', integrity='sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==', crossorigin='anonymous')
+    script(src='js/prefixfree.min.js')

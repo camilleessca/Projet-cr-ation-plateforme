@@ -46,28 +46,23 @@ html(lang='en')
                 // /.container-fluid
         // Fin de la navbar
         // Body
+        div
+            img#logoaccueil(src='../images/logo.jpg', alt='logo')
         #colordiv
-            br
-            br
-            br
-            br
-            br
-            br
-            br
-            br
-            br
-            br
-            br
-            br
-            br
-            br
-            br
-            br
-            br
-            br
-            br
-            br
-            br
+                .wrapper2
+                    #notreformulaire
+                        form#formulairedecontact(name='form1', method='post', action='#')
+                            h1 Contact
+                            label
+                                span Nom*:
+                                input#name(type='text', placeholder='Entrez votre nom', name='name', required='')
+                            label
+                                span Email*:
+                                input#email(type='email', placeholder='Votre-email@gmail.com', name='email', required='')
+                            label
+                                span Message:
+                                textarea#monmessage(name='monmessage', rows='4', cols='50', placeholder='Votre message', required='')
+                            input.sendButton(type='submit', name='Submit', value='Envoyer')
         // FOOTER
         // The content of your page would go here.
         footer.footer-distributed.fixed-bot

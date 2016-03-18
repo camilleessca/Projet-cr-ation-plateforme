@@ -119,7 +119,7 @@ var Users = {
                         // on entre l'User en session
                         req.session.email=checkUsers.email;
                     };
-                      res.redirect('http://localhost:3000');
+                      res.redirect('/users/profil');
                   }
                 });
 

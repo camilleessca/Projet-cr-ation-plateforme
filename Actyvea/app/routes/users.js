@@ -15,7 +15,17 @@ router.get('/', function(req, res) {
 });
 
 router.get('/Connexion', function(req, res){
-  res.render('connexionU');
+  res.render('connexion');
+  console.log('la page de connexion a été affiché!');
+});
+
+router.get('/signinU', function(req, res){
+  res.render('signinU');
+  console.log('la page de connexion a été affiché!');
+});
+
+router.get('/signinE', function(req, res){
+  res.render('signinE');
   console.log('la page de connexion a été affiché!');
 });
 
@@ -34,8 +44,29 @@ router.get('/contact', function(req, res) {
   console.log('La page des contacts a été affiché!');
 });
 
+router.get('/profil', function(req, res) {
+  res.render('profil');
+  console.log('La page du profil a été affiché!');
+});
+
+router.get('/offre', function(req, res) {
+  res.render('offreU');
+  console.log('La page des offres a été affiché!');
+});
+
+router.get('/messagerie', function(req, res) {
+  res.render('messagerieU');
+  console.log('La page de messagerie a été affiché!');
+});
+
+router.get('/test', function(req, res) {
+  res.render('test');
+  console.log('La page de test a été affiché!');
+});
+
 //Création d'un nouvel utilisateur Particulier
 /*action du formulaire Jade*/
 router.post('/Inscription', users.create);
 router.post('/Connexion_User', users.connect);
+
 module.exports = router;
